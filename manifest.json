@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Edinburgh uni file downloader",
+    "version": "1.1.1",
+    "description": "Download linked course files from Edinburgh Moodle and Learn with one batch button.",
+    "permissions": ["activeTab", "scripting", "downloads"],
+    "host_permissions": ["https://learn.ed.ac.uk/*", "https://www.learn.ed.ac.uk/*"],
+    "action": { "default_popup": "popup.html", "default_title": "Download Moodle files" },
+    "background": { "service_worker": "background.js" }
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Edinburgh uni file downloader</title>
+        <link rel="stylesheet" href="popup.css" />
+    </head>
+    <body>
+        <header>
+            <span class="badge">EDINBURGH UNI FILE DOWNLOADER</span>
+            <h1>Your course. Offline.</h1>
+            <p>Moodle and Learn. Ready for offline study.</p>
+        </header>
+        <main>
+            <div class="summary">
+                <strong id="count">Finding files…</strong
+                ><button id="scan" type="button">Rescan</button>
+            </div>
+            <p id="status" role="status" aria-live="polite">
+                Keep this popup open while the scan runs.
+            </p>
+            <label class="select"
+                ><input id="all" type="checkbox" checked /> Select all files</label
+            >
+            <div id="files"></div>
+            <div id="issues"></div>
+            <button id="download" type="button" disabled>Download all</button>
+            <p class="foot">
+                Saved in Downloads / Edinburgh Uni / your course.<br />Only files linked on this
+                loaded page are included.
+            </p>
+        </main>
+        <script src="popup.js"></script>
+    </body>
+</html>
